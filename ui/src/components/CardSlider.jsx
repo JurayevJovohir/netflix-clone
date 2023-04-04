@@ -11,11 +11,11 @@ function CardSlider({ data, title }) {
     const handleDirection = (direction) => {
         let distance = list.current.getBoundingClientRect().x - 70;
         if (direction === "left" && sliderPosition > 0) {
-            list.current.style.transform = `translateX(${230 + distance}px)`;
+            list.current.style.transform = `translateX(${313 + distance}px)`;
             setSliderPosition(sliderPosition - 1);
         }
         if (direction === "right" && sliderPosition < 4) {
-            list.current.style.transform = `translateX(${-230 + distance}px)`;
+            list.current.style.transform = `translateX(${-173 + distance}px)`;
             setSliderPosition(sliderPosition + 1);
         }
     };
